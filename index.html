@@ -118,30 +118,87 @@
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Harshit Saini</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+		<div class="container">
+			<!-- Brand Name with Stylish Font and Color Styling -->
+			<a class="navbar-brand font-weight-bold animated-logo" href="index.html">
+				<i class="fas fa-user-astronaut"></i> 
+				<span class="brand-highlight">Harshit</span> <span class="brand-secondary">Saini</span>
+			</a>
+	
+			<!-- Mobile Menu Toggle Button -->
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> <strong>Menu</strong>
+			</button>
+	
+			<!-- Navigation Links -->
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>🏠 Start Here</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>🙋‍♂️ About Me</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>💼 Experience</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>📂 Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>📞 Connect</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- CSS for Styling and Animation -->
+	<style>
+		/* Brand Name Styling */
+		.brand-highlight {
+			color: #ffcc00;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+		.brand-secondary {
+			color: #00ffcc;
+			font-weight: bold;
+			transition: 0.3s;
+		}
+	
+		/* Hover Effect for Brand Name */
+		.animated-logo:hover {
+			transform: scale(1.1);
+			transition: 0.3s ease-in-out;
+		}
+	
+		/* Navigation Link Styling */
+		.nav-item .nav-link {
+			font-weight: 500;
+			transition: 0.3s;
+			color: #ffffff !important;
+		}
+	
+		/* Navigation Link Hover Effect */
+		.nav-item .nav-link:hover {
+			color: #ffcc00 !important;
+			transform: scale(1.1);
+		}
+	
+		/* Ensure Navbar is Always Visible */
+		.navbar {
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+			padding: 10px 20px;
+		}
+	</style>
+	
+	<!-- Google Font for a Premium Look -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+		</nav>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>**Start Here**</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>**Who I Am**</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>**Experience & Expertise**</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>**Crafted with Code**</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>**Connect**</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
+		<section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/image_1.png);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/tuxpi.com.1743654082.jpg);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -166,6 +223,7 @@
 						'Data Visualization',
 						'Data Modelling  ',
 						'Prediction & Insights',
+						'Teacher',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -207,151 +265,124 @@
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
+		<div class="container">
+			<div class="row d-flex align-items-stretch">
+				<!-- Left Section: Profile & Skills -->
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<div class="row">
+								<div class="col-sm-6 col-md-5">
+									<div class="about-img">
 										<img src="images/234.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
 									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
+								</div>
+								<!-- Details next to profile image -->
+								<div class="col-sm-6 col-md-7">
+									<div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Harshit Saini</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
 										<p><span class="title-s">Experience: </span> <span>1 Years 9 Months</span></p>
 										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
-									  </div>
 									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
+								</div>
+							</div>
+	
+							<div class="skill-mf">
+								<p class="title-s">Skills</p>
+								
+								<span>SQL</span>
+								<div class="progress">
+									<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								
+								<span>PYTHON</span>
+								<div class="progress">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								
+								<span>Data Visualization</span>
+								<div class="progress">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								
+								<span>Statistical Analysis</span>
+								<div class="progress">
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<span>Mathematics</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ff5733;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">**Who I Am**</h2>
-								
-								<p>With **over a year of experience** in **data analytics and business intelligence**, 
-								I have successfully leveraged data-driven strategies to drive business growth. Holding a **Master’s in Computer Applications (MCA)** and 
-								a **Bachelor’s in Mathematics and Computing**, I specialize in **data analysis, performance tracking, reporting, and dashboard development**. 
-								Throughout my career at **Lucent Pvt Ltd and Globiva Services Pvt Ltd**, I have played a key role in **optimizing sales strategies, analyzing trends, and generating over ₹70 lakh in business**. 
-								Passionate about **data-driven decision-making**, I excel in uncovering insights that enhance operational efficiency and business performance.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-									
-								</ul>
-							</div>
+				</div>
+	
+				<!-- Right Section: About Me -->
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">Who I Am</h2>
+							<p>With <strong>over a year of experience</strong> in <strong>data analytics and business intelligence</strong>, 
+							I have successfully leveraged data-driven strategies to drive business growth. Holding a <strong>Master’s in Computer Applications (MCA)</strong> and 
+							a <strong>Bachelor’s in Mathematics and Computing</strong>, I specialize in <strong>data analysis, performance tracking, reporting, and dashboard development</strong>. 
+							Throughout my career at <strong>Lucent Pvt Ltd and Globiva Services Pvt Ltd</strong>, I have played a key role in <strong>optimizing sales strategies, analyzing trends, and generating over ₹70 lakh in business</strong>. 
+							Passionate about <strong>data-driven decision-making</strong>, I excel in uncovering insights that enhance operational efficiency and business performance.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+								<li class="d-flex"><span>Domain:</span> <span>Ed-tech,Retail, Ecommerce &amp; Digital Marketing</span></li>
+								<li class="d-flex"><span>Education:</span> <span>Polytechnic, BSc, MCA</span></li>
+								<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+								<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Tableau</span></li>
+								<li class="d-flex"><span>Other Skills:</span> <span>Statistical Analysis, Excel, Google Analytics &amp; SEO</span></li>
+								<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+							</ul>
 						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/harshit-saini-922323355/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
+					</div>
+	
+					<!-- LinkedIn Button Section -->
+					<div class="counter-wrap ftco-animate d-flex justify-content-start mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="10">0</span> <span>+</span>
+								<span>&nbsp; Projects completed</span>
+							</p>
+							<p><a href="https://www.linkedin.com/in/harshit-saini-922323355/" class="btn btn-primary py-3 px-3" style="background-color: #0077b5; border-color: #005582;">LinkedIn</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-    </section>
-
-
-
+	</section>	
 	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">**Expertise**</h2>
-            <p>
-				Results-driven <strong>Data Analyst</strong> with <strong>over a year of experience</strong> in 
-				<strong>data analytics, business intelligence, and performance optimization</strong>. 
-				Proven ability to <strong>analyze complex datasets, develop insightful dashboards, and drive strategic decision-making</strong>. 
-				Throughout my tenure at <strong>Lucent Pvt Ltd and Globiva Services Pvt Ltd</strong>, 
-				I have played a pivotal role in <strong>sales performance tracking, target management, and process optimization</strong>, 
-				generating <strong>₹70+ lakh in business</strong>.
-			</p>
-		
-			<h3>**🎯 Key Highlights**</h3>
-			<ul>
-				<li><strong>Data-Driven Decision Making:</strong> Translated raw data into actionable insights to enhance business operations.</li>
-				<li><strong>Dashboard & Reporting:</strong> Designed interactive <strong>Power BI and Tableau dashboards</strong> for business intelligence.</li>
-				<li><strong>Business Growth Contribution:</strong> Successfully optimized sales and operations, contributing to revenue growth.</li>
-				<li><strong>Performance Excellence:</strong> Consistently recognized for <strong>outstanding performance and top-tier quality scores</strong>.</li>
-				<li><strong>Collaboration & Strategy:</strong> Worked cross-functionally with marketing, sales, and finance teams to drive efficiency.</li>
-			</ul>
-		
-			<p>
-				Passionate about <strong>leveraging data for business success</strong>, 
-				I strive to bridge the gap between <strong>data analytics and strategic decision-making</strong> to deliver tangible results. 🚀
-			</p>
+          	
           </div>
         </div>
 
-		<div class="row">
-			<h2 class="big-4">**Experience**</h2>
-			<div class="underline"></div>
-		</div>
-		<br>
+		<style>
+			/* Highlight achievement numbers in white */
+			.highlight {
+				color: white;
+				font-weight: bold;
+			}
+		</style>
 		
 		<div class="container">
+			<div class="row">
+				<h2 class="big-4">Experience</h2>
+				<div class="underline"></div>
+			</div>
+			<br>
+		
 			<div class="row align-items-stretch">
 				<!-- Lucent Pvt Ltd Section -->
-				<div class="col-lg-6 col-md-12 d-flex align-items-stretch">
+				<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
 					<div class="resume-wrap ftco-animate w-100">
 						<span class="date">2024-Present</span>
 						<h2>Data Analyst</h2>
@@ -371,10 +402,13 @@
 		
 						<h3 class="mt-3">Achievements & Impact:</h3>
 						<ul>
-							<li>🚀 Designed a **Student Performance Dashboard** for Lucent Coaching Centre, improving academic insights.</li>
-							<li>📊 Implemented **data analytics solutions** that enhanced **student performance tracking & coaching effectiveness.**</li>
-							<li>📈 Developed **forecasting models** with **92% accuracy** to predict student success rates.</li>
-							<li>🔍 Conducted **A/B testing** on educational strategies, leading to a **20% improvement in learning outcomes.**</li>
+							<li>🚀 <span class="highlight">Increased revenue growth from 7.9% to 16.68% in just 8 months</span> through data-driven sales strategies.</li>
+							<li>📊 <span class="highlight">Conducted 200+ successful meetings</span> with stakeholders to align business strategies with data insights.</li>
+							<li>📈 <span class="highlight">Improved teacher productivity from 72% to 85%</span> by optimizing scheduling and performance tracking.</li>
+							<li>🔍 Designed a **Student Performance Dashboard** for Lucent Coaching Centre, enhancing academic insights.</li>
+							<li>📉 Developed **forecasting models** with <span class="highlight">96.8% accuracy</span> to predict student success rates.</li>
+							<li>📌 Implemented **A/B testing** on educational strategies, leading to a <span class="highlight">20% improvement</span> in learning outcomes.</li>
+							<li>🏆 <span class="highlight">2x Employee of the Month – Operations</span></li>
 						</ul>
 		
 						<p class="mt-3">
@@ -384,7 +418,7 @@
 				</div>
 		
 				<!-- Globiva Services Pvt Ltd Section -->
-				<div class="col-lg-6 col-md-12 d-flex align-items-stretch">
+				<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
 					<div class="resume-wrap ftco-animate w-100">
 						<span class="date">2023-2024</span>
 						<h2>Associate</h2>
@@ -398,29 +432,79 @@
 						<ul>
 							<li>Managed **American Express (AMEX) data** while driving sales of financial products.</li>
 							<li>Analyzed **sales trends** and optimized strategies to enhance revenue generation.</li>
-							<li>Ensured **high-quality customer interactions** to maximize conversions and retention.</li>
-							<li>Played a pivotal role in **performance tracking, target management, and customer engagement.**</li>
+							<li>Enhanced **calling scripts** to improve client engagement, boost conversions, and ensure a seamless sales experience.</li>
+							<li>Led **performance tracking, target management, and customer engagement strategies** to maximize efficiency.</li>
 						</ul>
 		
 						<h3 class="mt-3">Achievements & Recognitions:</h3>
 						<ul>
-							<li>🏆 **Generated over ₹50 lakh** in business during my tenure.</li>
-							<li>🏆 **5x Top Performer – American Express**</li>
-							<li>🏆 **2x Top Performer – Globiva**</li>
-							<li>🏆 **1x Quality Excellence Award**</li>
+							<li>🏆 <span class="highlight">Generated over ₹1.2 Cr+ revenue</span> within 9 months, exceeding sales targets consistently.</li>
+							<li>📈 <span class="highlight">Improved sales conversion rates</span> through optimized sales strategies and refined calling scripts.</li>
+							<li>🎤 <span class="highlight">Conducted 40+ onboarding meetings</span> for new joiners, ensuring seamless integration into the sales team.</li>
+							<li>🤝 <span class="highlight">Mentored & assisted over 130+ new joiners</span> in SOOP calls and buddy-up programs, enhancing team productivity.</li>
+							<li>🏆 <span class="highlight">2x Top Performer – American Express</span></li>
+							<li>🏆 <span class="highlight">2x Top Performer – Globiva</span></li>
+							<li>🏆 <span class="highlight">1x Quality Excellence Award</span></li>
 						</ul>
 		
 						<p class="mt-3">
 							My experience at **Globiva** strengthened my expertise in **sales performance tracking, data management, and strategic sales planning**, 
-							reinforcing my ability to **drive revenue through data-backed decision-making**.
+							reinforcing my ability to **drive revenue through data-backed decision-making** and **mentor new joiners to maximize team efficiency**.
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br>
+		<br>
 		
-		<br>
-		<br>
+		<section class="ftco-section ftco-no-pb" id="resume-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+					<div class="col-md-10 heading-section text-center ftco-animate">
+						<h1 class="big big-2">Achievements</h1>
+						<h2 class="mb-4">**Achievements**</h2>
+		
+						<div class="row align-items-center">
+							<!-- Left Images -->
+							<div class="col-md-3 text-center">
+								<img src="images/1.jpg" alt="Achievement 1" class="img-fluid rounded shadow mb-3">
+								<img src="images/t1.jpg" alt="Achievement 2" class="img-fluid rounded shadow mb-3">
+								<img src="images/IMG_2318.jpg" alt="Achievement 4" class="img-fluid rounded shadow mb-3">
+								</div>
+		
+							<!-- Center Text -->
+							<div class="col-md-6 text-center">
+								<h3 class="mb-3">🏆 Top Performer (5x)</h3>
+								<ul class="text-left d-inline-block">
+									<ul>
+										<li><span class="highlight">2x - American Express Client</span></li>
+										<li><span class="highlight">2x - Operations, Globiva</span></li>
+										<li><span class="highlight">2x - Employee of the Month, Lucent</span></li>
+										<li><span class="highlight">1x - Quality Dept, Globiva</span></li>
+										<li><span class="highlight">1x - Letter of Appreciation, Sharda University</span></li>
+									</ul>
+									
+								</ul>
+								<h4 class="mt-3">🎯 <span class="highlight">Key Highlights</span></h4>
+                                    <ul class="text-left d-inline-block">
+                                      <li><span class="highlight">₹1.2Cr revenue impact at Globiva</span></li>
+                                      <li><span class="highlight">16.68% business growth at Lucent</span></li>
+                                </ul>
+
+							</div>
+		
+							<!-- Right Images -->
+							<div class="col-md-3 text-center">
+								<img src="images/t2.jpg" alt="Achievement 3" class="img-fluid rounded shadow mb-3">
+								<img src="images/c2.jpg" alt="Achievement 4" class="img-fluid rounded shadow mb-3">
+								<img src="images/IMG_7640.jpg" alt="Achievement 4" class="img-fluid rounded shadow mb-3">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<div class="row">
 			<h1 class="big-4">**Education**</h1>
@@ -481,62 +565,194 @@
 		
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="resume.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="Resume (1).pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
     </section>
 
    
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5 text-center">
+				<div class="col-md-8 heading-section ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4 font-weight-bold">My Projects</h2>
+					<p>Explore my data analytics projects categorized into Power BI, SQL, Python, and Excel.</p>
+				</div>
+			</div>
+	
+			<!-- Tab Navigation -->
+			<ul class="nav nav-pills mb-5 justify-content-center" id="projectTabs" style="font-size: 1.5rem; font-weight: bold;">
+				<li class="nav-item">
+					<a class="nav-link px-4 py-2" data-toggle="pill" href="#python" style="font-size: 1.5rem;">Python</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-4 py-2" data-toggle="pill" href="#sql" style="font-size: 1.5rem;">SQL</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active px-4 py-2" data-toggle="pill" href="#powerbi" style="font-size: 1.5rem;">Power BI</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-4 py-2" data-toggle="pill" href="#excel" style="font-size: 1.5rem;">Excel</a>
+				</li>
+			</ul>
+			
+	
+			<div class="tab-content">
+				<!-- Python Projects -->
+				<div class="tab-pane fade" id="python">
+					<div class="row">
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/rex.png');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">Cafe Management System</a></h3>
+									<p>Developed a business management system for cafes, enabling order tracking and inventory control.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">**Projects**</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
-          </div>
+				<!-- SQL Projects Tab -->
+<div class="tab-pane fade" id="sql">
+    <div class="row">
+        <!-- Domino's Business Analytics -->
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+                <a href="#" class="block-20 zoom-effect" style="background-image: url('images/dominos.png');"></a>
+                <div class="text mt-3">
+                    <h3><a href="#">Domino’s Business Analytics</a></h3>
+                    <p>Executed SQL queries to analyze sales trends, customer behavior, and operational performance.</p>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://1drv.ms/u/c/b4fb44aa1e45563e/EV8C3QzjLzNOl3Gr9ymBsDsBYGBfR9UbeQDaGyizClyMXA?e=eX9Epa" class="block-20 zoom-effect" style="background-image: url('images/blinkit.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://1drv.ms/u/c/b4fb44aa1e45563e/EV8C3QzjLzNOl3Gr9ymBsDsBCpdPZRV5jsRCo7VrNeSBsg?e=TVPWd8">**Blinkit Revenue and Sales Performance Dashboard**</a></h3>
-                <p>  
-
-					I developed an interactive **Blinkit Dashboard** using **Power BI**, providing key insights into order trends, sales performance, and customer behavior. The dashboard includes **real-time analytics**, **geo-spatial mapping**, and **KPIs** for revenue, delivery times, and product demand. It enhances **data-driven decision-making** by offering a **clear visual representation** of operational efficiency and market trends.</p>
-              </div>
+        <!-- Customer Churn Analysis -->
+        <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+                <a href="#" class="block-20 zoom-effect" style="background-image: url('images/cc.webp');"></a>
+                <div class="text mt-3">
+                    <h3><a href="#">Customer Churn Analysis</a></h3>
+                    <p>Leveraged SQL & Excel to analyze customer data and provide data-driven retention strategies.</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://1drv.ms/u/c/b4fb44aa1e45563e/EYhOkcH9zx5Mpy_TviK8WxwBCWFq9NEWfljb5qMzgIkX2w?e=AKfgAU" class="block-20 zoom-effect" style="background-image: url('images/amex.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">**American Express Cards Dashboard**</a></h3>
-                <p>This dashboard provides an in-depth analysis of American Express credit card transactions, offering key insights into total spending, customer segments, and merchant categories. It includes interactive visualizations for tracking spending trends, average transaction values, and customer demographics. The dashboard enables data-driven decision-making by identifying high-value customers, monitoring payment behaviors, and optimizing marketing strategies.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://1drv.ms/u/c/b4fb44aa1e45563e/Eahh5SoWRvVHikKO2-MdOAYBoXeVIAuxsToZwKY8b3a_Cw?e=3ryNjT" class="block-20 zoom-effect" style="background-image: url('images/lu.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">**Lucent Performance Dashboard**</a></h3>
-                <p>This dashboard delivers a comprehensive overview of Lucent Pvt Ltd's business performance, focusing on key metrics such as revenue, sales trends, and customer engagement. It provides real-time analytics on product performance, regional sales distribution, and employee productivity. With intuitive visualizations, the dashboard helps in making strategic business decisions, optimizing operational efficiency, and enhancing overall organizational performance.</p>
-              </div>
-            </div>
-          </div>
         </div>
-	<br>
-		
+    </div>
+</div>
+
+
+				<!-- Power BI Projects -->
+				<div class="tab-pane fade show active" id="powerbi">
+					<div class="row">
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/blinkit.png');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">Blinkit Revenue & Sales Dashboard</a></h3>
+									<p>Developed an interactive Power BI dashboard analyzing order trends, sales, and customer behavior.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/amex.jpg');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">American Express Cards Dashboard</a></h3>
+									<p>Analyzed credit card transactions to derive insights into spending habits and merchant performance.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/lucent.png');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">Lucent Revenue Report Analysis</a></h3>
+									<p>Analyzed Lucent business transactions to derive insights into Students habits and performance.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/Sharda.png');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">Sharda Revenue Analysis</a></h3>
+									<p>Analyzed Sharda Hospital business transactions to derive insights into patients habits and performance.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				
+	
+				
+	
+				<!-- Excel Projects -->
+				<div class="tab-pane fade" id="excel">
+					<div class="row">
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="blog-entry">
+								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/cc.webp');"></a>
+								<div class="text mt-3">
+									<h3><a href="#">Customer Churn Analysis</a></h3>
+									<p>Leveraged Excel and SQL to analyze customer data and provide data-driven retention strategies.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	<style>
+		/* Custom CSS to reduce the gap between sections */
+		#project-section {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	
+		.ftco-section.ftco-no-pb {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	
+		.container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	
+		.row {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	
+		h1, h2, h3, h4 {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	
+		.big-2 {
+			font-size: 3rem; /* Customize as needed */
+			font-weight: bold;
+		}
+	
+		.heading {
+			font-size: 1.5rem; /* Customize as needed */
+		}
+	
+		.blockquote {
+			font-style: italic;
+		}
+	</style>
+	
+	
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
 		<div class="row d-md-flex align-items-center">
@@ -551,7 +767,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="20">0</strong>
+                <strong class="number" data-number="60">0</strong>
                 <span>Projects</span>
               </div>
             </div>
@@ -560,7 +776,7 @@
             <div class="block-18">
               <div class="text">
                 <strong class="number" data-number="40">0</strong>
-                <span>Collborations</span>
+                <span>Collaborations</span>
               </div>
             </div>
           </div>
@@ -636,7 +852,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><span><a href="resume.pdf">resumelink</a></p>
+	            <p><span><a href="Resume (1).pdf">resumelink</a></p>
 	          </div>
           </div>
 
