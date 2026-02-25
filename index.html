@@ -25,7 +25,17 @@
 
 
 <style>
-
+/* Custom wider container for large screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;   /* Increase from Bootstrap default */
+  }
+}
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+    background-attachment: fixed;
+    color: #f1f5f9;
+}
 /*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -34,15 +44,28 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
-
+.one-third.img {
+    background-size: cover !important;
+    background-position: center center !important;
+}
 .about-mf .about-img img {
   margin-left: 10px;
 }
+#sasa h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
+#sasa .btn {
+  border-radius: 30px;
+}
 
 .skill-mf .progress {
   /* background-color: #cde1f8; */
@@ -65,7 +88,6 @@
   color: rgb(255, 255, 255);
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
 }
 
 #typing-animation:before {
@@ -77,24 +99,6 @@
   height: 100%;
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
 }
 
 
@@ -178,19 +182,22 @@
 	
 		/* Ensure Navbar is Always Visible */
 		.navbar {
-			position: fixed;
-			width: 100%;
-			top: 0;
-			left: 0;
-			z-index: 1000;
-			background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-			padding: 10px 20px;
-		}
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 20px;
+}
 	</style>
-	
-	<!-- Google Font for a Premium Look -->
+		<!-- Google Font for a Premium Look -->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-		</nav>
 
 		<section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
@@ -198,7 +205,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/tuxpi.com.1743654082.jpg);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/IMG_7640.jpg);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -218,12 +225,11 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Engineer  ',
-						'Data Science  ',
+						'Automation',
+						'Excel',
 						'Data Visualization',
 						'Data Modelling  ',
-						'Prediction & Insights',
-						'Teacher',
+						'Power BI',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -291,26 +297,26 @@
 							<div class="skill-mf">
 								<p class="title-s">Skills</p>
 								
-								<span>SQL</span>
+								<span>Excel</span>
 								<div class="progress">
 									<div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								
-								<span>PYTHON</span>
+								<span>Power BI</span>
 								<div class="progress">
 									<div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								
-								<span>Data Visualization</span>
+								<span>SQL</span>
 								<div class="progress">
 									<div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								
-								<span>Statistical Analysis</span>
+								<span>Automation</span>
 								<div class="progress">
-									<div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<span>Mathematics</span>
+								<span>Artificial Intelligence</span>
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ff5733;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -328,16 +334,15 @@
 							<p>With <strong>over a year of experience</strong> in <strong>data analytics and business intelligence</strong>, 
 							I have successfully leveraged data-driven strategies to drive business growth. Holding a <strong>Master’s in Computer Applications (MCA)</strong> and 
 							a <strong>Bachelor’s in Mathematics and Computing</strong>, I specialize in <strong>data analysis, performance tracking, reporting, and dashboard development</strong>. 
-							Throughout my career at <strong>Lucent Pvt Ltd and Globiva Services Pvt Ltd</strong>, I have played a key role in <strong>optimizing sales strategies, analyzing trends, and generating over ₹70 lakh in business</strong>. 
+							Throughout my career at <strong>ZFW Hospitality Pvt Ltd, Lucent Pvt Ltd and Globiva Services Pvt Ltd</strong>, I have played a key role in <strong>optimizing sales strategies, analyzing trends, and generating over ₹70 lakh in business</strong>. 
 							Passionate about <strong>data-driven decision-making</strong>, I excel in uncovering insights that enhance operational efficiency and business performance.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-								<li class="d-flex"><span>Domain:</span> <span>Ed-tech,Retail, Ecommerce &amp; Digital Marketing</span></li>
+								<li class="d-flex"><span>Domain:</span> <span>Ed-tech,Retail, Ecommerce &amp; Supply Chain Management</span></li>
 								<li class="d-flex"><span>Education:</span> <span>Polytechnic, BSc, MCA</span></li>
 								<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-								<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI &amp; Tableau</span></li>
-								<li class="d-flex"><span>Other Skills:</span> <span>Statistical Analysis, Excel, Google Analytics &amp; SEO</span></li>
-								<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+								<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Excel &amp; Power BI</span></li>
+								<li class="d-flex"><span>Other Skills:</span> <span>Artificial Intelligence, Google Analytics &amp; SEO</span></li>
 							</ul>
 						</div>
 					</div>
@@ -381,41 +386,79 @@
 			<br>
 		
 			<div class="row align-items-stretch">
-				<!-- Lucent Pvt Ltd Section -->
-				<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">2024-Present</span>
-						<h2>Data Analyst Intern</h2>
-						<span class="position">Lucent Pvt Ltd</span>
-						<p class="mt-4">
-							<strong>Lucent Pvt Ltd</strong> is a dynamic organization specializing in <strong>data-driven solutions, analytics, and strategic insights</strong> to drive business growth. 
-							As a <strong>Data Analyst Intern</strong>, I leverage data to optimize decision-making and enhance operational efficiency.
-						</p>
-		
-						<h3 class="mt-3">Key Responsibilities:</h3>
-						<ul>
-							<li>Collected, cleaned, and analyzed **large datasets** to extract actionable insights.</li>
-							<li>Developed **interactive dashboards** using **Power BI & Tableau** to visualize key performance metrics.</li>
-							<li>Conducted **statistical analysis** and built **predictive models** to forecast trends and optimize business strategies.</li>
-							<li>Collaborated with cross-functional teams to streamline data-driven decision-making.</li>
-						</ul>
-		
-						<h3 class="mt-3">Achievements & Impact:</h3>
-						<ul>
-							<li>🚀 <span class="highlight">Increased revenue growth from 7.9% to 16.68% in just 8 months</span> through data-driven sales strategies.</li>
-							<li>📊 <span class="highlight">Conducted 200+ successful meetings</span> with stakeholders to align business strategies with data insights.</li>
-							<li>📈 <span class="highlight">Improved teacher productivity from 72% to 85%</span> by optimizing scheduling and performance tracking.</li>
-							<li>🔍 Designed a **Student Performance Dashboard** for Lucent Coaching Centre, enhancing academic insights.</li>
-							<li>📉 Developed **forecasting models** with <span class="highlight">96.8% accuracy</span> to predict student success rates.</li>
-							<li>📌 Implemented **A/B testing** on educational strategies, leading to a <span class="highlight">20% improvement</span> in learning outcomes.</li>
-							<li>🏆 <span class="highlight">2x Employee of the Month – Operations</span></li>
-						</ul>
-		
-						<p class="mt-3">
-							My role at <strong>Lucent Pvt Ltd</strong> has honed my expertise in **data analytics, visualization, and strategic planning**, enabling me to deliver **data-backed solutions** that drive organizational success.
-						</p>
-					</div>
-				</div>
+		    <!-- Zippee MIS Intern Section -->
+<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+    <div class="resume-wrap ftco-animate w-100">
+        <span class="date">Sept 2025 – Mar 2026</span>
+        <h2>MIS Intern</h2>
+        <span class="position">Zippee (ZFW Hospitality Pvt Ltd)</span>
+
+        <p class="mt-4">
+            <strong>Zippee</strong> is a fast-growing quick-commerce logistics and fulfillment company 
+            providing last-mile delivery solutions for major e-commerce brands. 
+            As an <strong>MIS Intern</strong>, I was responsible for preparing structured operational 
+            and performance reports for multiple brands across different geographies.
+        </p>
+
+        <h3 class="mt-3">Key Responsibilities:</h3>
+        <ul>
+            <li>Prepared <strong>hourly, daily, weekly, and monthly MIS reports</strong> for operational tracking.</li>
+            <li>Managed performance analytics for brands including <strong>Flipkart, Amazon (Dubai), Myntra, SDD</strong>, and other marketplace partners.</li>
+            <li>Analyzed order volume trends, SLA adherence, and fulfillment efficiency.</li>
+            <li>Built automated Excel dashboards to monitor KPIs and reduce manual reporting effort.</li>
+            <li>Collaborated with operations teams to improve productivity and process optimization.</li>
+        </ul>
+
+        <h3 class="mt-3">Impact & Contributions:</h3>
+        <ul>
+            <li>📊 Improved reporting accuracy and reduced turnaround time through structured MIS frameworks.</li>
+            <li>📈 Delivered actionable insights to enhance operational performance and SLA compliance.</li>
+            <li>⚡ Automated data workflows, increasing efficiency in cross-functional reporting.</li>
+        </ul>
+
+        <p class="mt-3">
+            This role strengthened my expertise in <strong>operational analytics, MIS reporting, 
+            Excel automation, and multi-brand performance tracking</strong>.
+        </p>
+    </div>
+</div>
+				<!-- G & V Education Compass Pvt Ltd Section -->
+<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+    <div class="resume-wrap ftco-animate w-100">
+        <span class="date">Mar 2025 – Sept 2025</span>
+        <h2>Data Analyst Intern</h2>
+        <span class="position">G & V Education Compass Pvt Ltd</span>
+
+        <p class="mt-4">
+            <strong>G & V Education Compass Pvt Ltd</strong> is an education-focused organization dedicated to 
+            academic performance enhancement, student analytics, and operational optimization. 
+            As a <strong>Data Analyst Intern</strong>, I leveraged data-driven strategies to improve 
+            student outcomes and streamline institutional performance.
+        </p>
+
+        <h3 class="mt-3">Key Responsibilities:</h3>
+        <ul>
+            <li>Collected, cleaned, and analyzed <strong>large educational datasets</strong> to derive actionable insights.</li>
+            <li>Designed and developed <strong>interactive dashboards</strong> using Power BI for student performance tracking.</li>
+            <li>Built <strong>forecasting models</strong> to predict student success and admission trends.</li>
+            <li>Automated reporting processes to improve operational efficiency.</li>
+            <li>Collaborated with academic teams to optimize teaching strategies using data insights.</li>
+        </ul>
+
+        <h3 class="mt-3">Achievements & Impact:</h3>
+        <ul>
+            <li>📊 Improved student performance tracking accuracy by <strong>30%+</strong>.</li>
+            <li>📈 Helped increase operational efficiency through data automation and reporting improvements.</li>
+            <li>🎯 Designed centralized dashboards for academic KPIs and admission metrics.</li>
+            <li>🚀 Delivered performance insights that enhanced strategic decision-making.</li>
+        </ul>
+
+        <p class="mt-3">
+            This internship strengthened my expertise in <strong>data analytics, dashboard development, 
+            and predictive modeling</strong>, while enabling me to apply analytics in the education domain.
+        </p>
+    </div>
+</div>
 		
 				<!-- Globiva Services Pvt Ltd Section -->
 				<div class="col-lg-6 col-md-6 d-flex align-items-stretch">
@@ -458,7 +501,7 @@
 		<br>
 		<br>
 		
-		<section class="ftco-section ftco-no-pb" id="resume-section">
+		<section class="ftco-section ftco-no-pb" id="achievements-section">
 			<div class="container">
 				<div class="row justify-content-center pb-5">
 					<div class="col-md-10 heading-section text-center ftco-animate">
@@ -477,13 +520,12 @@
 							<div class="col-md-6 text-center">
 								<h3 class="mb-3">🏆 Top Performer (5x)</h3>
 								<ul class="text-left d-inline-block">
-									<ul>
-										<li><span class="highlight">2x - American Express Client</span></li>
-										<li><span class="highlight">2x - Operations, Globiva</span></li>
-										<li><span class="highlight">2x - Employee of the Month, Lucent</span></li>
-										<li><span class="highlight">1x - Quality Dept, Globiva</span></li>
-										<li><span class="highlight">1x - Letter of Appreciation, Sharda University</span></li>
-									</ul>
+    <li><span class="highlight">2x - American Express Client</span></li>
+    <li><span class="highlight">2x - Operations, Globiva</span></li>
+    <li><span class="highlight">2x - Employee of the Month, Lucent</span></li>
+    <li><span class="highlight">1x - Quality Dept, Globiva</span></li>
+    <li><span class="highlight">1x - Letter of Appreciation, Sharda University</span></li>
+</ul>
 									
 								</ul>
 								<h4 class="mt-3">🎯 <span class="highlight">Key Highlights</span></h4>
@@ -585,7 +627,7 @@
 			<!-- Tab Navigation -->
 			<ul class="nav nav-pills mb-5 justify-content-center" id="projectTabs" style="font-size: 1.5rem; font-weight: bold;">
 				<li class="nav-item">
-					<a class="nav-link px-4 py-2" data-toggle="pill" href="#python" style="font-size: 1.5rem;">Python</a>
+					<a class="nav-link px-4 py-2" data-toggle="pill" href="#sasa" style="font-size: 1.5rem;">SASA Automation</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link px-4 py-2" data-toggle="pill" href="#sql" style="font-size: 1.5rem;">SQL</a>
@@ -598,26 +640,79 @@
 				</li>
 			</ul>
 			
-	
-			<div class="tab-content">
-				<!-- Python Projects -->
-				<div class="tab-pane fade" id="python">
-					<div class="row">
-						<div class="col-md-4 d-flex ftco-animate">
-							<div class="blog-entry">
-								<a href="#" class="block-20 zoom-effect" style="background-image: url('images/cms.webp');"></a>
-								<div class="text mt-3">
-									<h3><a href="#">Cafe Management System</a></h3>
-									<p>Developed a business management system for cafes, enabling order tracking and inventory control.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+				<div class="tab-content">
+					<div class="tab-pane fade" id="sasa">
 
-				<!-- SQL Projects Tab -->
-<div class="tab-pane fade" id="sql">
+  <!-- MAIN PROJECT SECTION FIRST -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-8 text-center">
+      <h3 class="mb-3">SASA Automation Engine</h3>
+
+      <a href="https://harshit3867.github.io/SASA/" target="_blank"
+         class="btn btn-primary px-4 py-2">
+        🔗 View Complete SASA Project
+      </a>
+
+      <p class="mt-3">
+        Centralized automation system handling projected orders, SLA tracking,
+        deep pain analysis, buffer logic, Excel ingestion, and operational KPIs
+        for multiple e-commerce brands.
+      </p>
+    </div>
+  </div>
+
+  <!-- REPORT SECTION BELOW -->
+  <div class="row">
+
+    <!-- Flipkart Report -->
+    <div class="col-md-4 d-flex ftco-animate">
+      <div class="blog-entry">
+        <a href="#" class="block-20 zoom-effect"
+           style="background-image: url('images/Fk_EOD.jpeg');"></a>
+        <div class="text mt-3">
+          <h3>Flipkart Report</h3>
+          <p>
+            Automated hourly & daily operational reporting including projected
+            orders, SLA adherence, and attainment dashboard.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Myntra Report -->
+    <div class="col-md-4 d-flex ftco-animate">
+      <div class="blog-entry">
+        <a href="#" class="block-20 zoom-effect"
+           style="background-image: url('images/Myntra_planned_rider.jpeg');"></a>
+        <div class="text mt-3">
+          <h3>Myntra Report</h3>
+          <p>
+            Built dynamic automation framework with real-time KPI monitoring,
+            buffer optimization, and shift-level analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SDD Report -->
+    <div class="col-md-4 d-flex ftco-animate">
+      <div class="blog-entry">
+        <a href="#" class="block-20 zoom-effect"
+           style="background-image: url('images/Brand_Pendancy.jpeg');"></a>
+        <div class="text mt-3">
+          <h3>SDD Report</h3>
+          <p>
+            Developed structured reporting engine with Excel ingestion,
+            SLA tracking, and deep pain root cause analytics.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+				<div class="tab-pane fade" id="sql">
     <div class="row">
         <!-- Domino's Business Analytics -->
         <div class="col-md-4 d-flex ftco-animate">
@@ -641,10 +736,8 @@
             </div>
         </div>
     </div>
-</div>
+	</div>
 
-
-				<!-- Power BI Projects -->
 				<div class="tab-pane fade show active" id="powerbi">
 					<div class="row">
 						<div class="col-md-4 d-flex ftco-animate">
@@ -706,6 +799,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</section>
 	
 	
@@ -750,6 +844,19 @@
 		.blockquote {
 			font-style: italic;
 		}
+		/* Glass Effect for Experience & Project Cards */
+.resume-wrap,
+.blog-entry {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px;
+}
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
 	</style>
 	
 	
@@ -867,7 +974,7 @@
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					   <li class="ftco-animate"><a href=https://www.linkedin.com/in/harshit-saini-922323355><span class="icon-linkedin"></span></a></li>  
+					   <li class="ftco-animate"><a href="https://www.linkedin.com/in/harshit-saini-922323355"><span class="icon-linkedin"></span></a></li>  
 					   <li class="ftco-animate"><a href="https://www.instagram.com/theharshitsaini/"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
@@ -879,7 +986,7 @@
  
 	
     <footer class="ftco-footer ftco-section">
-		<div class="container">
+		<div class="container-fluid">
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
